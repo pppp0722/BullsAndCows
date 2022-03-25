@@ -6,6 +6,7 @@ import lombok.ToString;
 import java.util.function.BiConsumer;
 
 @AllArgsConstructor
+@ToString
 public class Numbers {
     private Integer[] nums;
 

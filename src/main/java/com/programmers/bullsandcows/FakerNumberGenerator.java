@@ -13,6 +13,7 @@ public class FakerNumberGenerator implements NumberGenerator {
     public Numbers generate(int count) {
         return new Numbers(
                 Stream.generate(() -> faker.number().randomDigitNotZero())
+                .distinct()
                 .limit(count)
                 .toArray(Integer[]::new)
         );

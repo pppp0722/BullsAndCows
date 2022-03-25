@@ -20,6 +20,7 @@ public class BaseBall implements Runnable {
     @Override
     public void run() {
         Numbers answer = generator.generate(COUNT_OF_NUMBERS);
+        System.out.println(answer);
 
         while(true) {
             String inputString = input.input("숫자를 맞춰보세요: ");
